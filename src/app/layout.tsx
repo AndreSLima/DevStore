@@ -5,9 +5,12 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'DevStore',
+  title: {
+    template: '%s | devstore',
+    default: 'devstore',
+  },
   description:
-    'Projeto para fixação do NestJs13 (Projeto Original - RocketSeat Ignite)',
+    'Projeto para fixação do NextJs13 (Projeto Original - RocketSeat Ignite)',
 }
 
 export default function RootLayout({
